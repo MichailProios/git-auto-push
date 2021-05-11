@@ -8,7 +8,7 @@ ForEach-Object {
   
     CD $_.FullName  
 	
-	git status
+    git status
     
     git add --all 2>$null
     
