@@ -7,6 +7,8 @@ ForEach-Object {
     Write-Output "Pushing $_ to Bitbucket"
   
     CD $_.FullName  
+	
+	git status
     
     git add --all 2>$null
     
