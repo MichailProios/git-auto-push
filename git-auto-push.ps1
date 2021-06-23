@@ -23,7 +23,7 @@ ForEach-Object {
     }
     else{           
                
-        $output= (git ls-remote https://mproios:Maxim123@bitbucket.org/maximgrp/$_.git 2>&1)          
+        $output = (git ls-remote https://mproios:Maxim123@bitbucket.org/maximgrp/$_.git 2>&1)          
         
         if($output -like '*The requested repository either does not exist or you do not have access*'){
             Write-Output "Remote repository does not exist for $_"     
